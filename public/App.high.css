@@ -1,0 +1,71 @@
+.App-header:before {
+    content: '';
+    position: absolute;
+    width: 80vmin;
+    height: 80vmin;
+    background: url(/images/earth-blue.png);
+    border-radius: 50%;
+    background-size: 190vmin;
+    box-shadow: inset 6vmin 0 20vmin 2vmin rgb(0, 0, 0),
+    inset -1vmin 0 3vmin 1vmin rgba(255, 255, 255, 0.2);
+    animation: rotate 20s infinite linear;
+    opacity: 0.5;
+}
+
+@keyframes rotate {
+    from { background-position-x: 0; }
+    to { background-position-x: 190vmin; }
+}
+
+.App-threat-appear:before {
+    content: attr(data-text);
+    font-size: calc(50vmin);
+    position: absolute;
+    filter: blur(15px);
+    margin-left: -5vmin;
+    padding-left: 5vmin;
+    -webkit-mask-image: url(/images/lines2.png);
+    -webkit-mask-position: left top;
+    -webkit-mask-repeat: repeat;
+}
+
+@keyframes scanlines-anim {
+    0% {
+        -webkit-mask-position: 0 0;
+    }
+    100% {
+        -webkit-mask-position: 0 100px;
+    }
+}
+
+.App-threat-appear {
+    animation: App-threat-appear forwards ease-out 300ms;
+}
+
+.App-threat-disappear {
+    animation: App-threat-disappear forwards ease-out 300ms;
+}
+
+@keyframes App-threat-appear {
+    0% {
+        opacity: 0;
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes App-threat-disappear {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+        filter: blur(5vmin);
+    }
+}
+

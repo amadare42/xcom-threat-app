@@ -1,0 +1,12 @@
+.App-threat-appear:before {
+    animation: scanlines-anim 5s infinite linear;
+}
+
+@keyframes scanlines-anim {
+    0% {
+        -webkit-mask-position: 0 0;
+    }
+    100% {
+        -webkit-mask-position: 0 100px;
+    }
+}

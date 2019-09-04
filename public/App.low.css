@@ -1,0 +1,34 @@
+.App-threat {
+    transition: all 0.3s;
+}
+
+.App-threat-appear {
+    animation: App-threat-appear forwards ease-out 300ms;
+}
+
+.App-threat-disappear {
+    animation: App-threat-disappear forwards ease-out 300ms;
+}
+
+@keyframes App-threat-appear {
+    0% {
+        opacity: 0;
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes App-threat-disappear {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
+
