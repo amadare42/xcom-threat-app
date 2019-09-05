@@ -2,13 +2,13 @@
 
 Simple small progressive application for managing threat levels: simple counter from 1 to 5 that looks & sounds pretty.
 
-[Try it](http://xcomthreat.s3-website-us-west-2.amazonaws.com/)
+[Try it](https://xcomthreat.s3-us-west-2.amazonaws.com/index.html)
 
 ![animation](./screen.png)
 
 ## Android: add to home screen
 
-1. Open [application](http://xcomthreat.s3-website-us-west-2.amazonaws.com/) in Chrome on Android
+1. Open [application](https://xcomthreat.s3-us-west-2.amazonaws.com/index.html) in Chrome on Android
 2. Tap ⋮ symbol
 3. Tap "Add to home screen"
 
