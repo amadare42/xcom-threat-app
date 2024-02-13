@@ -8,7 +8,7 @@
 }
 
 .App-header {
-    background: #020202 url(/images/tiled-lines.png);
+    background: #020202 url(../public/images/tiled-lines.png);
     background-size: 10vh auto;
     min-height: 100vh;
     display: flex;

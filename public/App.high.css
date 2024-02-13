@@ -8,13 +8,13 @@
     background-size: 190vmin;
     box-shadow: inset 6vmin 0 20vmin 2vmin rgb(0, 0, 0),
     inset -1vmin 0 3vmin 1vmin rgba(255, 255, 255, 0.2);
-    animation: rotate 20s infinite linear;
+    animation: rotate 30s infinite linear;
     opacity: 0.5;
 }
 
 @keyframes rotate {
     from { background-position-x: 0; }
-    to { background-position-x: 190vmin; }
+    to { background-position-x: calc((100% - 80vmin) * -1); }
 }
 
 .App-threat-appear:before {
@@ -68,4 +68,3 @@
         filter: blur(5vmin);
     }
 }
-

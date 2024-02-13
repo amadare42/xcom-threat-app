@@ -1,5 +1,4 @@
 import React from "react";
-import { clearInterval } from "timers";
 
 interface Props {
     msg?: MessageData;
